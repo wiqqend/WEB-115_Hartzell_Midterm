@@ -55,4 +55,8 @@ summary.innerHTML =
     "Remaining Loan: $" + remainingloan.toFixed(2);
 resultsDiv.appendChild(summary);
 
+if (remainingloan == 0) {
+    const ending = document.createElement("p");
+    ending.innerHTML = "<strong>This ends the Amortization Calculator...</strong>"
+}
 }
