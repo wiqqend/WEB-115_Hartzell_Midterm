@@ -15,12 +15,12 @@ try {
 
         } catch (error) {
             alert("Error: " + error.message);}
-    calculate(initialloan, downpayment, totalmonths)
+    calculate(initialloan, downpayment, loanterm, totalmonths)
 
 });  
 
 
-function calculate(initialloan, downpayment, totalmonths) {
+function calculate(initialloan, downpayment, loanterm, totalmonths) {
 
 const resultsDiv = document.getElementById("schedule");
     resultsDiv.innerHTML = "";
